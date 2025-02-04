@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: java-backend-full-step
+  profiles:
+    active: @spring.profile.active@
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+logging:
+  level:
+    root: info
+    web: info
